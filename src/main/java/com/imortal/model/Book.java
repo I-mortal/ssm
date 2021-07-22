@@ -1,12 +1,16 @@
 package com.imortal.model;
 
+import java.io.Serializable;
+
 /**
  * @ClassName Book
  * @Description
  * @Author 一人树杨
  * @Date 2021/7/10 14:17
  **/
-public class Book {
+public class Book implements Serializable {
+
+    private static final long serialVersionUID = 6109073193885146550L;
 
     private int bookId;
     private String bookName;

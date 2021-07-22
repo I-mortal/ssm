@@ -10,6 +10,9 @@
     <!--关联数据库配置文件-->
     <context:property-placeholder location="classpath:properties/database.properties"/>
 
+    <!--根据注解扫描各个包中的组件,注册到容器中-->
+    <context:component-scan base-package="com.imortal"/>
+
     <!--数据库连接池-->
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
         <property name="driverClassName" value="${mybatis.driver}"/>
